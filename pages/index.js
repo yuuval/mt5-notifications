@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 import {getAllPairs} from "@lib/api";
 import Image from "next/image";
 import Form from 'react-bootstrap/Form';
+import Link from "next/link";
 
 
 export default function IndexPage() {
@@ -32,8 +33,9 @@ export default function IndexPage() {
                 pairs.filter(pair => pair.symbol.toLowerCase().includes(searchTerm.toLowerCase())).map((pair) => {
                     return (
                         <div key={pair.id} className={styles.key}>
-
-                            <h1 className={styles.title}>{pair.symbol}</h1>
+                            <Link href={`/pairs/${pair.id}`}>
+                                <h1 className={styles.title}>{pair.symbol}</h1>
+                            </Link>
                         </div>
                     )
                 })

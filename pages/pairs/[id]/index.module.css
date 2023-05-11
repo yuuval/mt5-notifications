@@ -1,0 +1,16 @@
+.key{
+    border-style: solid;
+    margin-top: 10em;
+    border-width: 3px;
+    padding: 2em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.contact{
+    margin-top: 1em;
+}
+
+.contactTitle{
+    margin-top: 1em;
+}

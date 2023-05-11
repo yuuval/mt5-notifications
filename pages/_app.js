@@ -16,7 +16,7 @@ export default function App({Component, pageProps}) {
         <>
             <Header>
                 <Link className="link" href="/" passHref>
-                    Schützenstube Platten
+                    MT5-NOTIFICATIONS
                 </Link>
             </Header>
             {/*Alle Dateien die im Pages verzeichnis sind, werden in diesem Bereich angezeigt.*/}

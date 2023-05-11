@@ -13,7 +13,7 @@ export default function Footer() {
                 <Row>
                     <Col style={{textAlign: "left"}}><img src="/favicon.ico" alt="logo" width="137px"
                                                           height="80px"/></Col>
-                    <Col style={{textAlign: "center"}}><p className={styles.openingTimes}>Ramadan Shala</p></Col>
+                    <Col style={{textAlign: "center"}}><p className={styles.openingTimes}>Valmir Halimaji</p></Col>
                     <Col style={{textAlign: "right", marginBottom: "1em"}}><SocialIcon style={{height: 25, width: 25}}
                                                                                        url="https://twitter.com/"/><br/>
                         <SocialIcon style={{height: 25, width: 25}} url="https://instagram.com/"/><br/>
