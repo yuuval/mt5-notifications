@@ -24,6 +24,10 @@ export default function IndexPage() {
         loadPairs()
     }, [pairs])
 
+    const notify = () => {
+        new Notification("To do list");
+    }
+
     return (
         <div className={styles.posts}>
             <Form.Control className={styles.searchBar} type={"text"} placeholder="Search..." onChange={event => {
@@ -41,6 +45,8 @@ export default function IndexPage() {
                 })
 
             }
+            <button onClick={notify}>Click to notify</button>
+
         </div>
     )
 }
