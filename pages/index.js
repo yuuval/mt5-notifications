@@ -44,7 +44,7 @@ export default function IndexPage() {
                     )
                 })
             }
-            <Button onClick={notify}>Click to notify</Button>
+            <button onClick={notify}>Click to notify</button>
         </div>
     )
 }
