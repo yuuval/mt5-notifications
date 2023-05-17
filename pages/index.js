@@ -1,9 +1,9 @@
 import styles from "./index.module.css";
 import {useState, useEffect} from "react";
 import {getAllPairs} from "@lib/api";
-import Image from "next/image";
 import Form from 'react-bootstrap/Form';
 import Link from "next/link";
+import Button from "react-bootstrap/Button";
 
 
 export default function IndexPage() {
@@ -24,6 +24,10 @@ export default function IndexPage() {
         loadPairs()
     }, [pairs])
 
+    const notify = () => {
+        new Notification("To do list");
+    }
+
     return (
         <div className={styles.posts}>
             <Form.Control className={styles.searchBar} type={"text"} placeholder="Search..." onChange={event => {
@@ -39,8 +43,8 @@ export default function IndexPage() {
                         </div>
                     )
                 })
-
             }
+            <Button onClick={notify}>Click to notify</Button>
         </div>
     )
 }
