@@ -1,0 +1,40 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding-left: 1em;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header > a {
+    color: black !important;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.header > a:hover {
+    text-decoration: underline;
+}
+
+.header > div a:hover {
+    text-decoration: underline;
+}
+
+.headerDiv {
+    top: 0;
+    position: sticky;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+.header > .headerDiv a {
+    color: black !important;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}

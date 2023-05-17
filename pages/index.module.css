@@ -1,0 +1,82 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.aside {
+    margin-top: 3em;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 3em;
+}
+
+.menuTitle h2 {
+    font-size: 1em;
+}
+
+.menuTitle p {
+    font-size: 0.8em;
+}
+
+.menuTitle span {
+    font-size: 0.8em;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.mapResponsive {
+    border: outset #333333;
+    height: 200px;
+    width: 250px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.openingTimes {
+    text-align: center;
+    font-size: 15px;
+}
+
+.openingTimes aside {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 700px) {
+    .mapResponsive {
+        height: 300px;
+        width: 450px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .aside {
+        margin-top: 3em;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .openingTimes {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .mapResponsive {
+        height: 400px;
+        width: 600px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}

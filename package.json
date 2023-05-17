@@ -1,0 +1,40 @@
+{
+  "homepage": "https://yuuval.github.io/schuetzenstube-schliern",
+  "name": "schuetzenstube",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run lint-watch\" \"next dev\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build:app": "concurrently --kill-others \"npm run server\" \"npm run build\"",
+    "start": "concurrently --kill-others \"npm run server\" \"next start\"",
+    "build": "next build",
+    "lint": "next lint",
+    "lint-watch": "nodemon --watch . --exec npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "bootstrap": "^5.1.3",
+    "concurrently": "^7.1.0",
+    "date-fns": "^2.29.3",
+    "hamburger-react": "^2.5.0",
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0",
+    "jwt-decode": "^3.1.2",
+    "mdb-react-ui-kit": "^4.1.0",
+    "next": "^12.1.5",
+    "nodemon": "^2.0.15",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.0.0",
+    "react-social-icons": "^5.15.0",
+    "social-icons": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "gh-pages": "^4.0.0"
+  }
+}
