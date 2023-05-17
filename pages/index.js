@@ -25,7 +25,10 @@ export default function IndexPage() {
     }, [pairs])
 
     const notify = () => {
-        new Notification("To do list");
+        Notification.requestPermission().then((result) => {
+            console.log(result);
+            new Notification("To do list");
+        });
     }
 
     return (
